@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root{
+  --primary-dark: #041134;
+  --secondary-dark: #2A46D8;
+  --primary-light: #BAD3F9;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: unset;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+#dark {
+  background: linear-gradient(105deg, #050c28 3.66%, #032667 36.06%, #023d9e 64.47%, #005ce9 103.35%);
+}
+
+.containerBody {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#light {
+  background: linear-gradient(105deg, #4a88e7 3.66%, #d9ddea 56.1%, #d9ddea 58.56%, #5993ef 103.35%);
+}
+
+.css-1wvake5 {
+  border-color: inherit !important;
+}
+
+.css-dip3t8 {
+  background: none !important;
+}
+
+.ps-menu-button:hover{
+  background: none !important;
+}
+
+.css-1t8x7v1:hover{
+  background: none !important;
+}
+
+
+
+.css-1wvake5:not(.ps-collapsed){
+  min-width: 212px !important;
+  max-width: 212px !important;
+  width: 212px !important;
+}
+
+.css-1t8x7v1 >.ps-menu-button {
+  padding-left: 12px !important;
+}
