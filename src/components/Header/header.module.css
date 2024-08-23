@@ -13,26 +13,57 @@ header {
     border-radius: 24px;
 }
 
-.dark .nav{
+.dark .nav {
     background: none;
     background-color: var(--secondary-dark) !important;
 }
 
-.light .nav{
-    background-color: var(--secondary-light);
+.light .nav {
+    background-color: var(--primary-light);
 }
 
-.activeBar{
+.activeBar,
+.disableBar,
+.itemMenu {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 8px 10px;
-    background-color: #041134;
+    border-radius: 15px;
 }
 
-.disableBar{
+.activeBar p,
+.disableBar p,
+.itemMenu p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.dark .activeBar p,
+.dark .disableBar p,
+.dark .itemMenu p {
+    color: var(--white-default);
+}
+
+.light .activeBar p,
+.light .disableBar p,
+.light .itemMenu p {
+    color: var(--tertiary-light);
+}
+
+.dark .activeBar {
+    background-color: var(--primary-dark);
+}
+
+.light .activeBar {
+    background-color: var(--secondary-light);
+}
+
+.replaceTheme {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     padding: 8px 10px;
+    border-radius: 15px;
 }

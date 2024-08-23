@@ -9,9 +9,12 @@ DataProvider.propTypes = {
 
 export default function DataProvider({children}){
     const [theme, setTheme] = useState('dark')
+    const toogleThemeElement = (darkElement, lightElement) => theme === 'dark' ? darkElement : lightElement
+    
     const toogleTheme = () => setTheme(theme === 'dark' ? 'light'  : 'dark')
     const dados ={
-        theme, toogleTheme
+        theme, toogleTheme,
+        toogleThemeElement
     }
     return(
         <DataContext.Provider value={dados}>
