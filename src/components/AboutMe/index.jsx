@@ -1,8 +1,8 @@
 import useContexts from "../../hooks/useContext"
 import { useInView } from 'react-intersection-observer';
-import styles from "./sobreMim.module.css";
+import styles from "./aboutMe.module.css";
 import imageLuiz from "../../assets/luizgustavo2.png";
-import SlideTech from './../SlideTech/index';
+import SlideTech from '../SlideTech/index';
 
 export default function SobreMim() {
   const { setActiveSection, toogleThemeElement } = useContexts()
@@ -15,7 +15,7 @@ export default function SobreMim() {
   });
 
   return (
-    <section id="sobre-mim" ref={sobreMimRef} className={`${styles.secSobreMim} ${toogleThemeElement(styles.dark, styles.light)}`}>
+    <section id="sobre-mim" ref={sobreMimRef} className={`${styles.secAboutMe} ${toogleThemeElement(styles.dark, styles.light)}`}>
       <div className={styles.boxText}>
         <h2>Sobre mim</h2>
         <h1>Conheça mais sobre mim</h1>

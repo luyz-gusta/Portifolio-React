@@ -22,17 +22,13 @@
         color: #fff;
     }    
 }
-
-.secSobreMim{
-    height: auto !important;
-    min-height: 100vh !important;
-}
-
-.secSobreMim {
+.secAboutMe {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     padding-right: 240px;
+    height: auto !important;
+    min-height: 100vh !important;
 }
 
 .boxText {
