@@ -1,0 +1,154 @@
+.secHome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark {
+    h2 {
+        color: var(--white-default);
+    }
+
+    h1 {
+        background: linear-gradient(105deg, #4A88E7 3.66%, #D9DDEA 36.06%, #5993EF 67.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkCV {
+        color: var(--secondary-dark);
+        background-color: var(--white-default);
+    }
+
+    .line {
+        background-color: var(--white-default);
+    }
+
+    .boxText {
+        color: var(--white-default);
+    }
+
+    .boxText strong {
+        background: linear-gradient(105deg, #4A88E7 3.66%, #D9DDEA 36.06%, #5993EF 67.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkCV:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .scroll {
+        span{
+            color: #fff
+        }
+    }
+}
+
+.containerText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.boxText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxText h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.boxText h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: 24px;
+}
+
+.boxText p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.linkCV {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 16px 42px;
+    width: max-content;
+    border-radius: 50px;
+    margin-top: 42px;
+    transition:
+        box-shadow 0.25s ease-out,
+        background-color 0.2s ease-out;
+}
+
+.scroll{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px; 
+    bottom: 0;
+    padding-bottom: 32px;
+}
+
+.lineScroll{
+    height: 80px;
+    width: 1px;
+    background-color: var(--white-default);
+}
+
+.linkCV span {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.linkCV svg {
+    font-size: 1.5rem;
+}
+
+.containerLine {
+    display: flex;
+    height: 100%;
+    gap: 40px;
+}
+
+.boxLine {
+    display: flex;
+    height: 100%;
+    width: auto;
+    padding: 32px 0px;
+}
+
+.boxLine:nth-child(2) {
+    align-items: flex-end;
+    padding-right: 32px;
+}
+
+.line {
+    animation: line both;
+    height: 70%;
+    width: 1px;
+}
+
+@keyframes line {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}

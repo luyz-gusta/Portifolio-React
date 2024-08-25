@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 32px;
     height: 100vh;
     width: 100%;
 }
@@ -32,9 +32,18 @@ header {
     border-radius: 15px;
 }
 
+.itemNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding: 8px 10px; */
+    border-radius: 15px;
+}
+
 .activeBar p,
 .disableBar p,
-.itemMenu p {
+.itemMenu p,
+.itemNav p{
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -42,13 +51,16 @@ header {
 
 .dark .activeBar p,
 .dark .disableBar p,
-.dark .itemMenu p {
+.dark .itemMenu p,
+.dark .itemNav p{
     color: var(--white-default);
 }
 
+
 .light .activeBar p,
 .light .disableBar p,
-.light .itemMenu p {
+.light .itemMenu p,
+.light .itemNav p {
     color: var(--tertiary-light);
 }
 
