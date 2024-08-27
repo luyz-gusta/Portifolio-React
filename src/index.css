@@ -131,8 +131,8 @@ body,
   align-items: center;
   background-position: center;
   background-size: cover;
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
 }
 
 .swiper-slide img {

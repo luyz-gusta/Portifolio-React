@@ -1,18 +1,16 @@
-import Header from "../../components/Header"
-import Home from "../../components/Home"
-import SobreMim from "../../components/SobreMim"
-import useContexts from "../../hooks/useContext"
+import Home from "../../components/Sections/Home"
+import AboutMe from "../../components/Sections/AboutMe"
+import Project from "../../components/Sections/Project"
+import Contact from "../../components/Sections/Contact"
 
 export default function OnePage() {
-    const { theme } = useContexts()
 
     return (
-        <div className="containerBody" id={theme}>
-            <Header />
-            <main>
-                <Home />
-                <SobreMim />
-            </main>
-        </div>
+        <>
+            <Home />
+            <AboutMe />
+            <Project />
+            <Contact />
+        </>
     )
 }

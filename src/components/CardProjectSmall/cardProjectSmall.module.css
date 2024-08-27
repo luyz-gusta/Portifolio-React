@@ -1,0 +1,76 @@
+.dark {
+    background-color: #1d204e;
+
+    .boxText h2 {
+        color: var(--white-default);
+    }
+
+    .boxText p {
+        color: #fff;
+    }
+
+    .btn {
+        background: radial-gradient(168.93% 67.04% at 51.72% 60.35%, #4a88e7 0%, #d9ddea 32.5%, #5993ef 64%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-radius: 4.433px;
+        border: 1px #4a88e7 solid;
+    }
+}
+
+.cardProject {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.cardProject:hover {
+    scale: 1.02;
+    border-radius: 8px;
+}
+
+.dataProject {
+    display: flex;
+    gap: 12px;
+}
+.boxText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boxText h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.boxText p {
+    text-align: justify;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    height: max-content;
+    width: max-content;
+    padding: 6px 14px;
+}

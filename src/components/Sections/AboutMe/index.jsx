@@ -1,21 +1,21 @@
-import useContexts from "../../hooks/useContext"
+import useContexts from "../../../hooks/useContext"
 import { useInView } from 'react-intersection-observer';
 import styles from "./aboutMe.module.css";
-import imageLuiz from "../../assets/luizgustavo2.png";
-import SlideTech from '../SlideTech/index';
+import imageLuiz from "../../../assets/luizgustavo2.png";
+import SlideTech from '../../SlideTech/index';
 
 export default function SobreMim() {
   const { setActiveSection, toogleThemeElement } = useContexts()
 
-  const { ref: sobreMimRef } = useInView({
+  const { ref: aboutMeRef } = useInView({
     threshold: 0.5,
     onChange: (inView) => {
-      if (inView) setActiveSection('sobre-mim');
+      if (inView) setActiveSection('aboutMe');
     },
   });
 
   return (
-    <section id="sobre-mim" ref={sobreMimRef} className={`${styles.secAboutMe} ${toogleThemeElement(styles.dark, styles.light)}`}>
+    <section id="aboutMe" ref={aboutMeRef} className={`${styles.secAboutMe} ${toogleThemeElement(styles.dark, styles.light)}`}>
       <div className={styles.boxText}>
         <h2>Sobre mim</h2>
         <h1>Conheça mais sobre mim</h1>
@@ -33,9 +33,8 @@ export default function SobreMim() {
         <img src={imageLuiz} alt="Imagem do desenvolvedor" />
       </div>
       <div className={styles.slides}>
-
+        <SlideTech />
       </div>
-      <SlideTech />
     </section>
   )
 }

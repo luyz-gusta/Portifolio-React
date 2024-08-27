@@ -1,9 +1,9 @@
-import useContexts from "../../hooks/useContext"
+import useContexts from "../../../hooks/useContext"
 import { useInView } from 'react-intersection-observer';
 import styles from "./home.module.css";
-import imagemLuiz from '../../assets/luizgustavo.jpg'
+import imagemLuiz from '../../../assets/luizgustavo.jpg'
 import { FaArrowAltCircleDown } from "react-icons/fa";
-import curriculoPDF from '../../assets/Currículo-Luiz Gustavo-New.pdf'
+import curriculoPDF from '../../../assets/Currículo-LuizGustavo-New.pdf'
 
 export default function Home() {
     const { setActiveSection, toogleThemeElement } = useContexts()

@@ -1,0 +1,57 @@
+.dark {
+    h1 {
+        background: linear-gradient(105deg, #4a88e7 3.66%, #d9ddea 36.06%, #5993ef 67.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btnAllProject {
+        color: var(--secondary-dark);
+        background-color: var(--white-default);
+    }
+}
+
+.secProject {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding-top: 30px;
+    padding-right: 136px;
+    align-items: center;
+}
+
+.secProject h1 {
+    width: 100%;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.containerProjects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px 0px;
+    width: 100%;
+}
+
+.boxTags {
+    display: flex;
+    gap: 10px;
+}
+
+.btnAllProject {
+    padding: 12px 32px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    transition: .5s all;
+}
+
+.btnAllProject:hover{
+    scale: 1.03;
+}

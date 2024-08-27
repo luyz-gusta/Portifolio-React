@@ -8,8 +8,10 @@ import iconMenuDark from '../../assets/icons/menuDark.svg'
 import iconMenuLight from '../../assets/icons/menuLight.svg'
 import iconUserDark from '../../assets/icons/userDark.svg'
 import iconUserLight from '../../assets/icons/userLight.svg'
-// import iconProjectDark from '../../assets/icons/projectDark.svg'
-// import iconProjectLight from '../../assets/icons/projectsLight.svg'
+import iconProjectDark from '../../assets/icons/projectDark.svg'
+import iconProjectLight from '../../assets/icons/projectsLight.svg'
+import iconContactDark from '../../assets/icons/contactDark.svg'
+import iconContactLight from '../../assets/icons/contactLight.svg'
 import { PropTypes } from 'prop-types';
 
 const ItemMenu = ({ children }) => {
@@ -52,9 +54,23 @@ export default function Header() {
                         </ItemMenu>
 
                         <ItemMenu >
-                            <a href="#sobre-mim" className={activeSection === 'sobre-mim' ? styles.activeBar : styles.disableBar}>
+                            <a href="#aboutMe" className={activeSection === 'aboutMe' ? styles.activeBar : styles.disableBar}>
                                 <img src={toogleThemeElement(iconUserDark, iconUserLight)} alt="Icone referênciando o sobre mim" />
                                 <p>Sobre mim</p>
+                            </a>
+                        </ItemMenu>
+
+                        <ItemMenu >
+                            <a href="#project" className={activeSection === 'project' ? styles.activeBar : styles.disableBar}>
+                                <img src={toogleThemeElement(iconProjectDark, iconProjectLight)} alt="Icone referênciando o projetos" />
+                                <p>Projetos</p>
+                            </a>
+                        </ItemMenu>
+
+                        <ItemMenu >
+                            <a href="#contact" className={activeSection === 'contact' ? styles.activeBar : styles.disableBar}>
+                                <img src={toogleThemeElement(iconContactDark, iconContactLight)} alt="Icone referênciando o contato" />
+                                <p>Contato</p>
                             </a>
                         </ItemMenu>
 

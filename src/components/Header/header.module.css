@@ -4,6 +4,13 @@ header {
     padding-left: 32px;
     height: 100vh;
     width: 100%;
+
+}
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .nav {

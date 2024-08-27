@@ -14,6 +14,8 @@ import jquery from '../../assets/technologies/jquery.png'
 import kotlin from '../../assets/technologies/kotlin.png'
 import jetpackCompose from '../../assets/technologies/jetpackCompose.png'
 import bootstrap from '../../assets/technologies/bootstrap.png'
+import git from '../../assets/technologies/git.png'
+import github from '../../assets/technologies/github.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,7 +41,6 @@ export default function SlideTech() {
                 loop={true} 
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 spaceBetween={20}
-                initialSlide={5}
                 pagination={{ clickable: true }}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper"
@@ -80,6 +81,12 @@ export default function SlideTech() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={mongodb} alt="MongoDB" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={git} alt="Git" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={github} alt="Github" />
                 </SwiperSlide>
             </Swiper>
         </>
