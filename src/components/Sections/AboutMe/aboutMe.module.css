@@ -8,7 +8,7 @@
     }
 
     .boxText h1 {
-        color: #fff;
+        color: var(--text-light);
     }
 
     .boxText h2 {
@@ -22,6 +22,32 @@
         color: #fff;
     }    
 }
+
+.light {
+    .line {
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 49.87%, #014DC4 56.1%, #050C28 103.35%);
+    }
+
+    .circle {
+        background-color: #050C28;
+    }
+
+    .boxText h1 {
+        color: var(--text-light);
+    }
+
+    .boxText h2 {
+        background: linear-gradient(105deg, #050C28 2.66%, #005CE9 5.87%, #014DC4 8.1%, #050C28 10.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .textAbout {
+        color: var(--text-light);
+    }    
+}
+
 .secAboutMe {
     display: flex;
     flex-direction: column;

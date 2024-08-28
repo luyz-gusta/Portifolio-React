@@ -1,6 +1,7 @@
 .secHome {
     display: flex;
     justify-content: space-between;
+    height: 100vh !important;
 }
 
 .dark {
@@ -43,6 +44,57 @@
         span{
             color: #fff
         }
+    }
+
+    .lineScroll{
+        background-color: var(--white-default);
+    }
+}
+
+.light{
+    h2 {
+        color: var(--text-light);
+    }
+
+    h1 {
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 49.87%, #014DC4 56.1%, #050C28 103.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkCV {
+        color: var(--primary-light);
+        background-color: var(--text-light);
+    }
+
+    .line {
+        background-color: var(--tertiary-light);
+    }
+
+    .boxText {
+        color: var(--text-light);
+    }
+
+    .boxText strong {
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 49.87%, #014DC4 56.1%, #050C28 103.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .linkCV:hover {
+        background-color: rgba(15, 18, 59, 0.9);
+    }
+
+    .scroll {
+        span{
+            color: var(--text-light);
+        }
+    }
+
+    .lineScroll{
+        background-color:var(--text-light);
     }
 }
 
@@ -107,7 +159,6 @@
 .lineScroll{
     height: 80px;
     width: 1px;
-    background-color: var(--white-default);
 }
 
 .linkCV span {

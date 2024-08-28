@@ -12,6 +12,20 @@
     }
 }
 
+.light {
+    h1 {
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 49.87%, #014DC4 56.1%, #050C28 103.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btnAllProject {
+        color: var(--primary-light);
+        background-color: var(--text-light);
+    }
+}
+
 .secProject {
     display: flex;
     flex-direction: column;
