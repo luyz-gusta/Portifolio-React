@@ -1,6 +1,5 @@
 import { PropTypes } from 'prop-types';
 import styles from './cardProjectSmall.module.css'
-import { Link } from 'react-router-dom';
 import useContexts from '../../hooks/useContext';
 
 CardProjectSmall.propTypes = {
@@ -8,12 +7,13 @@ CardProjectSmall.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
-    to: PropTypes.string
+    to: PropTypes.string,
+    btnDeploy: PropTypes.bool
 }
 
-export default function CardProjectSmall({ technologies, name, description, image, to}) {
+export default function CardProjectSmall({ technologies, name, description, image, to, btnDeploy }) {
     const { toogleThemeElement } = useContexts()
-    
+
     return (
         <div className={`${styles.cardProject} ${toogleThemeElement(styles.dark, styles.light)}`}>
             <div className={styles.dataProject}>
@@ -25,7 +25,16 @@ export default function CardProjectSmall({ technologies, name, description, imag
             </div>
             <div className={styles.box}>
                 {technologies}
-                <Link to={`/${to}`} className={styles.btn}>Saber mais</Link>
+                {btnDeploy ?
+                    <div className={styles.btnDeploy}>
+                        <a href={'https://valorantcore-web.netlify.app/'} target="_blank" className={styles.btnOpen}>Abrir Projeto</a>
+                        <a href={`${to}`} className={styles.btn}>Saber mais</a>
+                    </div>
+                    :
+                    <div className={styles.btnMore}>
+                        <a href={`${to}`} className={styles.btn}>Saber mais</a>
+                    </div>
+                }
             </div>
         </div>
     )

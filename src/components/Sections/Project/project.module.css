@@ -14,7 +14,7 @@
 
 .light {
     h1 {
-        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 49.87%, #014DC4 56.1%, #050C28 103.35%);
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 6.87%, #014DC4 9.1%, #050C28 10.35%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -37,7 +37,7 @@
 
 .secProject h1 {
     width: 100%;
-    font-size: 72px;
+    font-size: clamp(2.625rem, -0.0536rem + 2.8571vw, 3.375rem);
     font-style: normal;
     font-weight: 800;
 }
@@ -52,6 +52,7 @@
 
 .boxTags {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -68,4 +69,22 @@
 
 .btnAllProject:hover{
     scale: 1.03;
+}
+
+@media(max-width:767px){
+    .secProject {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        padding-right: 0px;
+        padding: 30px 30px;
+        align-items: center;
+    }
+    .containerProjects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px 0px;
+        width: 100%;
+    }
 }

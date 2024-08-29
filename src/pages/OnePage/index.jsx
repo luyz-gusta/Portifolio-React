@@ -10,7 +10,7 @@ export default function OnePage() {
             <Home />
             <AboutMe />
             <Project />
-            {/*<Contact /> */}
+            <Contact /> 
         </>
     )
 }

@@ -310,20 +310,25 @@
 }
 
 @media (max-width: 768px) {
-    .secHome{
+    .secHome {
         padding-top: 16px;
     }
-    .boxText{
+    .boxText {
         padding: 0px 32px;
     }
-    .scroll{
+    .scroll {
         padding-top: 20px;
-        
+    }
+
+    .light img {
+        filter: brightness(0.8);
+        border-radius: 100%;
+        box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.51);
     }
 }
 
 @media (max-width: 640px) {
-    .boxText{
+    .boxText {
         gap: 8px;
     }
     .boxText h2 {
@@ -356,11 +361,10 @@
         padding-right: 6px;
     }
 
-    .containerText{
+    .containerText {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin-top: 20px;
     }
 }
-

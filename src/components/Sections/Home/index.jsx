@@ -3,9 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import styles from "./home.module.css";
 import imagemLuiz from '../../../assets/luizgustavo.jpg'
 import imagemLuizCircle from '../../../assets/luizgustavoCircle.jpg'
-import { FaArrowAltCircleDown } from "react-icons/fa";
-import curriculoPDF from '../../../assets/Currículo-LuizGustavo-New.pdf'
 import { useEffect, useState } from "react";
+import BtnCV from "../../BtnCV";
 
 export default function Home() {
     const { setActiveSection, toogleThemeElement } = useContexts()
@@ -34,10 +33,7 @@ export default function Home() {
                     <h2>Olá, me chamo <strong>Luiz Gustavo!</strong></h2>
                     <h1>Desenvolvedor <br />Fullstack</h1>
                     <p>Transformo ideias em soluções digitais, dominando cada etapa do processo.</p>
-                    <a href={curriculoPDF} download='curriculo-luiz.pdf' className={styles.linkCV}>
-                        <span>Baixar CV</span>
-                        <FaArrowAltCircleDown />
-                    </a>
+                    <BtnCV />
                 </div>
                 <div className={styles.scroll}>
                     <span>SCROLL</span>
