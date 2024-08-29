@@ -39,7 +39,7 @@ export default function SlideTech() {
                     slideShadows: true,
                 }}
                 loop={true} 
-                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                autoplay={{ delay: 1000, disableOnInteraction: false }}
                 spaceBetween={20}
                 pagination={{ clickable: true }}
                 modules={[EffectCoverflow, Pagination, Autoplay]}

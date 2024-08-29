@@ -1,13 +1,12 @@
-header {
+.header {
     display: flex;
     align-items: center;
     padding-left: 32px;
     height: 100vh;
     width: 100%;
-
 }
 
-.navBar{
+.navBar {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -50,7 +49,7 @@ header {
 .activeBar p,
 .disableBar p,
 .itemMenu p,
-.itemNav p{
+.itemNav p {
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -59,10 +58,9 @@ header {
 .dark .activeBar p,
 .dark .disableBar p,
 .dark .itemMenu p,
-.dark .itemNav p{
+.dark .itemNav p {
     color: var(--white-default);
 }
-
 
 .light .activeBar p,
 .light .disableBar p,
@@ -85,4 +83,10 @@ header {
     gap: 20px;
     padding: 8px 10px;
     border-radius: 15px;
+}
+
+@media (max-width: 1500px) {
+    .header {
+        padding-left: 20px;
+    }
 }

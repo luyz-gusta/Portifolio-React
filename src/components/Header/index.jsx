@@ -13,6 +13,7 @@ import iconProjectLight from '../../assets/icons/projectsLight.svg'
 import iconContactDark from '../../assets/icons/contactDark.svg'
 import iconContactLight from '../../assets/icons/contactLight.svg'
 import { PropTypes } from 'prop-types';
+import SwitchTheme from '../SwitchTheme'
 
 const ItemMenu = ({ children }) => {
     return (
@@ -31,12 +32,11 @@ ItemMenu.propTypes = {
 }
 
 export default function Header() {
-    const { toogleThemeElement, activeSection, toogleTheme } = useContexts()
+    const { toogleThemeElement, activeSection } = useContexts()
     const [collapsed, setCollapsed] = useState(true)
-    const [isChecked, setIsChecked] = useState(true)
 
     return (
-        <header className={toogleThemeElement(styles.dark, styles.light)}>
+        <header className={`${toogleThemeElement(styles.dark, styles.light)} ${styles.header}`}>
             <Sidebar collapsed={collapsed} className={styles.nav}>
                 <Menu>
                     <MenuItem onClick={() => setCollapsed(!collapsed)}>
@@ -108,7 +108,7 @@ export default function Header() {
                     </div>
                     {/* <img src={toogleThemeElement(iconHomeDark, iconHomeLight)} alt="Icone de casa" />
                         <p>Alterar</p> */}
-                    <div style={{padding: '0px 12px 10px 12px'}}>
+                    {/* <div style={{padding: '0px 12px 10px 12px'}}>
                         <label className="theme-switch">
                             <input type="checkbox" className="theme-switch__checkbox" checked={isChecked} onClick={() => toogleTheme()} onChange={() => setIsChecked(!isChecked)}/>
                             <div className="theme-switch__container">
@@ -129,7 +129,8 @@ export default function Header() {
                                 </div>
                             </div>
                         </label>
-                    </div>
+                    </div> */}
+                    <SwitchTheme />
                 </Menu>
             </Sidebar>
         </header>

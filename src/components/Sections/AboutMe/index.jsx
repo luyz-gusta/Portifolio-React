@@ -17,21 +17,25 @@ export default function SobreMim() {
 
   return (
     <section id="aboutMe" ref={aboutMeRef} className={`${styles.secAboutMe} ${toogleThemeElement(styles.dark, styles.light)}`}>
-      <div className={styles.boxText}>
-        <h2>Sobre mim</h2>
-        <h1>Conheça mais sobre mim</h1>
-        <div className={styles.boxForms}>
-          <div className={styles.line}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
+      <div className={styles.containerMain}>
+        <div className={styles.boxMain}>
+          <div className={styles.boxText}>
+            <h2>Sobre mim</h2>
+            <h1>Conheça mais sobre mim</h1>
+            <div className={styles.boxForms}>
+              <div className={styles.line}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+              <div className={styles.circle}></div>
+            </div>
+          </div>
+          <p className={styles.textAbout}>
+            Olá! Sou Luiz, Desenvolvedor Full-Stack e estudante do segundo semestre de Engenharia de Software na FIAP. Já sou formado em Informática pelo ITB e Desenvolvimento de Sistemas pelo Senai, o que me proporcionou uma base sólida em tecnologia. Atualmente, estou aprofundando minha experiência em front-end, com foco em soluções inovadoras e impactantes utilizando tecnologias fullstack JS.
+          </p>
         </div>
-      </div>
-      <div className={styles.boxMan}>
-        <p className={styles.textAbout}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>
+        <div className={styles.boxImg}>
         <img src={toogleThemeElement(imageLuizLight, imageLuizDark)} alt="Imagem do desenvolvedor" />
+        </div>
       </div>
       <div className={styles.slides}>
         <SlideTech />
