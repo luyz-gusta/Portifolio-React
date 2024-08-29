@@ -38,12 +38,21 @@
     border-radius: 15px;
 }
 
+.itemTheme {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
 .itemNav {
     display: flex;
     align-items: center;
     gap: 20px;
     /* padding: 8px 10px; */
     border-radius: 15px;
+    height: auto;
 }
 
 .activeBar p,
@@ -84,6 +93,20 @@
     padding: 8px 10px;
     border-radius: 15px;
 }
+
+.iconTheme{
+    animation: spin 1s linear ;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 @media (max-width: 1500px) {
     .header {

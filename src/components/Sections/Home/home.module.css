@@ -301,7 +301,7 @@
         min-height: 100vh !important;
         padding-top: 12px;
         /* height: auto !important;  */
-        height: inherit !important;
+        height: auto !important;
     }
     .scroll {
         display: flex;
@@ -310,6 +310,9 @@
 }
 
 @media (max-width: 768px) {
+    .secHome{
+        padding-top: 16px;
+    }
     .boxText{
         padding: 0px 32px;
     }

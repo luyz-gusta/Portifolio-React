@@ -1,9 +1,7 @@
-import { useState } from "react"
 import useContexts from "../../hooks/useContext"
 
 export default function SwitchTheme() {
-    const {toogleTheme } = useContexts()
-    const [isChecked, setIsChecked] = useState(true)
+    const {toogleTheme, isChecked, setIsChecked } = useContexts()
 
     return (
         <div style={{ padding: '0px 12px 10px 12px' }}>

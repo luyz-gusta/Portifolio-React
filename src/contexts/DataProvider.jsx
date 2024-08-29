@@ -14,6 +14,8 @@ export default function DataProvider({children}){
     const toogleTheme = () => setTheme(theme === 'dark' ? 'light'  : 'dark')
     const [isMobileBig, setIsMobileBig] = useState(window.innerWidth <= 768)
     const [isMobileSmall, setIsMobileSmall] = useState(window.innerWidth <= 640)
+    const [isChecked, setIsChecked] = useState(true)
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -29,7 +31,8 @@ export default function DataProvider({children}){
         theme, toogleTheme,
         toogleThemeElement,
         activeSection, setActiveSection,
-        isMobileBig, isMobileSmall
+        isMobileBig, isMobileSmall,
+        isChecked, setIsChecked
     }
 
     return(
