@@ -1,6 +1,6 @@
-import { Menu, Sidebar } from "react-pro-sidebar";
+import { Menu, MenuItem, Sidebar } from "react-pro-sidebar";
 import { PropTypes } from 'prop-types';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from './headerMobile.module.css'
 import useContexts from "../../hooks/useContext";
 import SwitchTheme from "../SwitchTheme";
@@ -14,6 +14,8 @@ import iconProjectDark from '../../assets/icons/projectDark.svg'
 import iconProjectLight from '../../assets/icons/projectsLight.svg'
 import iconContactDark from '../../assets/icons/contactDark.svg'
 import iconContactLight from '../../assets/icons/contactLight.svg'
+import iconThemeDark from '../../assets/icons/iconThemeDark.svg'
+import iconThemeLight from '../../assets/icons/iconThemeLight.svg'
 import { SlMenu } from "react-icons/sl";
 import { CgClose } from "react-icons/cg";
 
@@ -35,7 +37,23 @@ ItemMenu.propTypes = {
 
 export default function HeaderMobile() {
     const [toggled, setToggled] = useState(false);
-    const { toogleThemeElement, activeSection } = useContexts()
+    const { toogleThemeElement, isChecked, setIsChecked, activeSection, toogleTheme } = useContexts()
+    const [animate, setAnimate] = useState(false)
+    const [valueAnimate, setValueAnimate] = useState(0)
+
+    useEffect(() => {
+        setAnimate(true);
+
+        const timer = setTimeout(() => {
+            setAnimate(false);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, [valueAnimate]);
+
+    const handleChange = () => {
+        setValueAnimate(valueAnimate + 1);
+    };
 
     return (
         <>
@@ -80,7 +98,22 @@ export default function HeaderMobile() {
                             </a>
                         </ItemMenu>
                     </div>
-                    <SwitchTheme />
+                    <MenuItem >
+                        <div className={styles.itemTheme} style={{ display: 'flex', alignItems: 'center' }}>
+                            <img
+                                src={`${toogleThemeElement(iconThemeDark, iconThemeLight)} `}
+                                onClick={() => {
+                                    toogleTheme()
+                                    handleChange()
+                                    setIsChecked(!isChecked)
+                                }}
+                                className={`${animate ? styles.iconTheme : ''}`}
+                                alt="Icone referênciando o trocar de tema" />
+                            <div onClick={handleChange}>
+                                <SwitchTheme />
+                            </div>
+                        </div>
+                    </MenuItem>
                 </Menu>
             </Sidebar>
             <header className={`${toogleThemeElement(styles.dark, styles.light)} ${styles.headerMobile}`}>

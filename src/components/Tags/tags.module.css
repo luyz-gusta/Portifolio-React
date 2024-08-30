@@ -91,6 +91,11 @@
     background-color: #F16B16;
 }
 
+.firebase{
+    color: var(--white-default);
+    background-color: #F16B16;
+}
+
 .socket{
     color: var(--white-default);
     background-color: #21AF90;

@@ -119,3 +119,11 @@ export function TagGit(){
         </div>
     )
 }
+
+export function TagFirebase(){
+    return(
+        <div className={`${styles.tag} ${styles.firebase}`}>
+            <span>Firebase</span>
+        </div>
+    )
+}

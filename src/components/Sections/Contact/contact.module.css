@@ -1,0 +1,172 @@
+.dark {
+    h1 {
+        background: linear-gradient(105deg, #4a88e7 3.66%, #d9ddea 9.06%, #5993ef 10.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .boxText h2 {
+        background: linear-gradient(105deg, #4a88e7 3.66%, #d9ddea 46.06%, #5993ef 96.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .boxMidia li {
+        color: var(--white-default);
+    }
+
+    .listMedia a:hover p {
+        text-decoration: underline;
+    }
+
+    .listMedia a span {
+        transition: all .5s;
+    }
+
+    .listMedia a:hover span {
+        background-color: rgba(42, 70, 216, 0.7);
+    }
+
+    .listMedia a span {
+        color: var(--white-default);
+        background-color: var(--secondary-dark);
+    }
+
+    .listMedia a p {
+        color: var(--white-default);
+    }
+}
+
+.light {
+    h1 {
+        background: linear-gradient(105deg, #050c28 3.66%, #005ce9 6.87%, #014dc4 9.1%, #050c28 10.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .boxText h2 {
+        background: linear-gradient(105deg, #050c28 3.66%, #005ce9 48.87%, #014dc4 58.1%, #050c28 90.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .boxMidia li {
+        color: var(--text-light);
+    }
+
+    .listMedia a:hover p {
+        text-decoration: underline;
+    }
+
+    .listMedia a span {
+        transition: all .5s;
+    }
+
+    .listMedia a:hover span {
+        background-color: rgba(74, 136, 231, 0.7);
+    }
+
+    .listMedia a span {
+        color: var(--white-default);
+        background-color: var(--secondary-light);
+    }
+
+    .listMedia a p {
+        color: var(--text-light);
+    }
+}
+
+.secContact {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.secContact h1 {
+    padding-top: 90px;
+    width: 100%;
+    font-size: clamp(2.625rem, -0.0536rem + 2.8571vw, 3.375rem);
+    font-style: normal;
+    font-weight: 800;
+}
+
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 60px;
+}
+
+.boxMain {
+    display: flex;
+    gap: 90px;
+    width: 100%;
+}
+
+.boxText {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.boxText h2 {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.boxMidia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxMidia li {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.socialMedia {
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.listMedia {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.listMedia a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listMedia a p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.listMedia a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.listMedia a span svg {
+    font-size: 30px;
+}
+
+@media(max-width:1500px){
+    .containerContact {
+        padding-left: 0px;
+    }
+}

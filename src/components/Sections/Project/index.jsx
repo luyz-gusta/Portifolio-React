@@ -1,10 +1,11 @@
 import { useInView } from "react-intersection-observer";
-import landingPagePikachu from "../../../assets/landingPagePikachu.png";
 import sbook from "../../../assets/projects/sbook.svg";
 import valorantCore from "../../../assets/projects/valorantCore.svg";
+import resoluti from "../../../assets/projects/resoluti.svg";
+import valorantWebComponent from "../../../assets/projects/valorantWebComponent.svg";
 import useContexts from "../../../hooks/useContext";
 import CardProjectSmall from "../../CardProjectSmall";
-import { TagCss, TagGit, TagHtml, TagJavascript, TagJetpackCompose, TagKotlin, TagMongoDB, TagMySql, TagNodejs, TagReact, TagSocketIO } from "../../Tags";
+import { TagCss, TagFirebase, TagGit, TagHtml, TagJavascript, TagJetpackCompose, TagKotlin, TagMongoDB, TagMySql, TagNodejs, TagReact, TagSocketIO, TagTypescript } from "../../Tags";
 import styles from "./project.module.css";
 
 export default function Project() {
@@ -25,6 +26,7 @@ export default function Project() {
                     name='S-Book'
                     description='O S-book é uma plataforma web e mobile que facilita a troca, venda e doação de livros, promovendo a leitura, reduzindo o desperdício e incentivando a comunidade a compartilhar suas paixões literárias. Esse foi o meu projeto de conclusão do curso de Desenvolvimento de Sistemas, realizado em equipe, onde utilizamos a metodologia ágil Scrum para organizar o trabalho. Atuei como desenvolvedor fullstack e participei ativamente de todas as fases do projeto.'
                     image={sbook}
+                    to='https://github.com/DevelopersVision/FrontEnd-Web_Sbook.git'
                     technologies={
                         <div className={styles.boxTags}>
                             <TagReact />
@@ -45,6 +47,8 @@ export default function Project() {
                     description='O ValorantCore é um site totalmente responsivo dedicado a um dos jogos mais populares atualmente, o Valorant. Desenvolvi este projeto enquanto praticava React, utilizando hooks, incluindo a Context API. Usei uma API pública do jogo para obter dados e gerar os cards dos agentes e mapas.'
                     image={valorantCore}
                     btnDeploy={true}
+                    to='https://github.com/luyz-gusta/ValorantCore'
+                    toDeploy='https://valorantcore-web.netlify.app/'
                     technologies={
                         <div className={styles.boxTags}>
                             <TagReact />
@@ -54,25 +58,36 @@ export default function Project() {
                     }
                 />
                 <CardProjectSmall
-                    name='Landing page Pikachu'
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    to='landing-page-pikachu'
-                    image={landingPagePikachu}
+                    name='Resoluti'
+                    description='Esse projeto foi desenvolvido como parte de um teste técnico para a empresa Resoluti. Nele, criei o front-end utilizando React, o back-end com TypeScript, e o banco de dados em MySQL. O objetivo principal foi construir um projeto fullstack, onde é possível visualizar a lista de pessoas cadastradas, adicionar novas pessoas, editar registros existentes e excluir cadastros. Além disso, utilizei o Firebase para armazenar imagens e gerar URLs de acesso a elas.'
+                    to='https://github.com/luyz-gusta/resoluti'
+                    image={resoluti}
                     
                     technologies={
                         <div className={styles.boxTags}>
-                            <TagHtml />
+                            <TagReact />
                             <TagCss />
-                            <TagSocketIO />
+                            <TagGit />
+                            <TagNodejs />
+                            <TagTypescript />
+                            <TagFirebase />
+                            <TagMySql />
                         </div>
                     }
                 />
                 <CardProjectSmall
-                    name='Landing page Pikachu'
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    to='landing-page-pikachu'
-                    image={landingPagePikachu}
-                    technologies={<TagJavascript />}
+                    name='Valorant WebComponent'
+                    description='Este projeto teve como objetivo didático o consumo de uma API pública, a utilização de rotas e web components, como parte do curso de Desenvolvimento de Sistemas. Além disso, é um projeto totalmente responsivo, com todo o design do layout criado no Figma.'
+                    to='https://github.com/luyz-gusta/Valorant-WebComponent'
+                    image={valorantWebComponent}
+                    technologies={
+                        <div className={styles.boxTags}>
+                            <TagHtml />
+                            <TagCss />
+                            <TagJavascript />
+                            <TagGit />
+                        </div>
+                    }
                 />
             </div>
             {/* <Link

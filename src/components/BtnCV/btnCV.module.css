@@ -24,7 +24,6 @@
     padding: 16px 42px;
     width: max-content;
     border-radius: 50px;
-    margin-top: 42px;
     transition:
         box-shadow 0.25s ease-out,
         background-color 0.2s ease-out;
@@ -47,7 +46,6 @@
     .linkCVLight {
         gap: 30px;
         padding: 12px 32px;
-        margin-top: 32px;
     }
 
     .linkCVDark span,
@@ -68,7 +66,6 @@
     .linkCVLight {
         gap: 30px;
         padding: 10px 28px;
-        margin-top: 28px;
     }
 
     .linkCVDark span,

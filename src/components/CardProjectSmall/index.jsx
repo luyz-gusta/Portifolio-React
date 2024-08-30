@@ -8,10 +8,11 @@ CardProjectSmall.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     to: PropTypes.string,
-    btnDeploy: PropTypes.bool
+    btnDeploy: PropTypes.bool,
+    toDeploy: PropTypes.string
 }
 
-export default function CardProjectSmall({ technologies, name, description, image, to, btnDeploy }) {
+export default function CardProjectSmall({ technologies, name, description, image, to, btnDeploy, toDeploy }) {
     const { toogleThemeElement } = useContexts()
 
     return (
@@ -27,12 +28,12 @@ export default function CardProjectSmall({ technologies, name, description, imag
                 {technologies}
                 {btnDeploy ?
                     <div className={styles.btnDeploy}>
-                        <a href={'https://valorantcore-web.netlify.app/'} target="_blank" className={styles.btnOpen}>Abrir Projeto</a>
-                        <a href={`${to}`} className={styles.btn}>Saber mais</a>
+                        <a href={`${toDeploy}`} target="_blank" className={styles.btnOpen}>Abrir Projeto</a>
+                        <a href={`${to}`} target="_blank" className={styles.btn}>Saber mais</a>
                     </div>
                     :
                     <div className={styles.btnMore}>
-                        <a href={`${to}`} className={styles.btn}>Saber mais</a>
+                        <a href={`${to}`} target="_blank" className={styles.btn}>Saber mais</a>
                     </div>
                 }
             </div>
