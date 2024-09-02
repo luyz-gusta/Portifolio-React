@@ -22,7 +22,7 @@
     }
 
     .listMedia a span {
-        transition: all .5s;
+        transition: all 0.5s;
     }
 
     .listMedia a:hover span {
@@ -63,7 +63,7 @@
     }
 
     .listMedia a span {
-        transition: all .5s;
+        transition: all 0.5s;
     }
 
     .listMedia a:hover span {
@@ -78,6 +78,20 @@
     .listMedia a p {
         color: var(--text-light);
     }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+    height: max-content;
+    width: 100%;
+    text-align: center;
+}
+
+.darkFooter p {
+    color: var(--white-default);
 }
 
 .secContact {
@@ -165,14 +179,14 @@
     font-size: 30px;
 }
 
-@media(max-width:1500px){
+@media (max-width: 1500px) {
     .containerContact {
         padding-left: 0px;
     }
 }
 
-@media(max-width:1400px){
-    .boxMain{
+@media (max-width: 1400px) {
+    .boxMain {
         gap: 32px;
     }
 
@@ -193,20 +207,20 @@
         gap: clamp(2rem, -0.025rem + 3.6vw, 3.125rem);
     }
 
-    .imgLuiz{
+    .imgLuiz {
         width: 30%;
     }
 }
 
-@media(max-width:1200px){
-    .socialMedia{
+@media (max-width: 1200px) {
+    .socialMedia {
         flex-direction: column;
         align-items: flex-start;
     }
 }
 
-@media(max-width:960px){
-    .boxMain{
+@media (max-width: 960px) {
+    .boxMain {
         display: flex;
         flex-direction: column;
     }
@@ -216,7 +230,6 @@
         gap: 32px;
     }
 
-
     .secContact h1 {
         padding-top: 0px;
     }
@@ -225,23 +238,23 @@
         flex-wrap: wrap;
     }
 
-    .imgLuiz{
+    .imgLuiz {
         width: 50%;
     }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
     .secContact {
         padding: 30px 30px;
     }
 
-    .boxMain{
+    .boxMain {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .boxText{
+    .boxText {
         width: 100%;
     }
 
