@@ -26,7 +26,7 @@ export default function Contact() {
             <h1>Contato</h1>
             <div className={styles.containerContact}>
                 <div className={styles.boxMain}>
-                    <img src={luizGustavo} alt="Imagem do desenvolvedor" />
+                    <img src={luizGustavo} alt="Imagem do desenvolvedor" className={styles.imgLuiz}/>
                     <div className={styles.boxText}>
                         <h2>Luiz Gustavo</h2>
                         <ul className={styles.boxMidia}>
@@ -48,19 +48,19 @@ export default function Contact() {
                 <div className={styles.socialMedia}>
                     <BtnCV />
                     <div className={styles.listMedia}>
-                        <a href="" className={styles.itemMedia}>
+                        <a href="https://github.com/luyz-gusta" className={styles.itemMedia}>
                             <span>
                                 <FaGithub />
                             </span>
                             <p>luyz-gusta</p>
                         </a>
-                        <a href="" className={styles.itemMedia}>
+                        <a href="https://www.linkedin.com/in/luyz-gusta/" className={styles.itemMedia}>
                             <span>
                                 <FaLinkedinIn />
                             </span>
                             <p>Luiz Gustavo Da Silva</p>
                         </a>
-                        <a href="" className={styles.itemMedia}>
+                        <a href="https://www.instagram.com/luyz.gusta/" className={styles.itemMedia}>
                             <span>
                                 <FaInstagram />
                             </span>

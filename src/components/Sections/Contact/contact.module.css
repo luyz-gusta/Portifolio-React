@@ -170,3 +170,87 @@
         padding-left: 0px;
     }
 }
+
+@media(max-width:1400px){
+    .boxMain{
+        gap: 32px;
+    }
+
+    .boxText h2 {
+        font-size: clamp(4.5rem, 3.15rem + 2.4vw, 5.25rem);
+    }
+
+    .boxMidia li {
+        gap: clamp(0.375rem, -0.075rem + 0.8vw, 0.625rem);
+        font-size: clamp(0.875rem, 0.425rem + 0.8vw, 1.125rem);
+    }
+
+    .socialMedia {
+        gap: clamp(2.5rem, 0.25rem + 4vw, 3.75rem);
+    }
+
+    .listMedia {
+        gap: clamp(2rem, -0.025rem + 3.6vw, 3.125rem);
+    }
+
+    .imgLuiz{
+        width: 30%;
+    }
+}
+
+@media(max-width:1200px){
+    .socialMedia{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:960px){
+    .boxMain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secContact {
+        padding: 80px 12px 32px 0px;
+        gap: 32px;
+    }
+
+
+    .secContact h1 {
+        padding-top: 0px;
+    }
+
+    .listMedia {
+        flex-wrap: wrap;
+    }
+
+    .imgLuiz{
+        width: 50%;
+    }
+}
+
+@media(max-width:768px){
+    .secContact {
+        padding: 30px 30px;
+    }
+
+    .boxMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxText{
+        width: 100%;
+    }
+
+    .boxMidia li {
+        gap: clamp(0.375rem, -0.075rem + 0.8vw, 0.625rem);
+        font-size: clamp(0.875rem, 0.6033rem + 1.087vw, 1.125rem);
+    }
+
+    .boxText h2 {
+        font-size: clamp(3.375rem, 2.1522rem + 4.8913vw, 4.5rem);
+    }
+}
