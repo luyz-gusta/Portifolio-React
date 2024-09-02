@@ -30,7 +30,7 @@ export default function SobreMim() {
             </div>
           </div>
           <p className={styles.textAbout}>
-            Olá! Sou Luiz, Desenvolvedor Full-Stack e estudante do segundo semestre de Engenharia de Software na FIAP. Já sou formado em Informática pelo ITB e Desenvolvimento de Sistemas pelo Senai, o que me proporcionou uma base sólida de conhecimentos. Atualmente, estou aprofundando minha experiência em front-end, com foco em soluções inovadoras e impactantes utilizando tecnologias fullstack JS.
+            Olá! Sou Luiz, Desenvolvedor Full-Stack e estudante do segundo semestre de Engenharia de Software na FIAP. Já sou formado em Informática pelo ITB e Desenvolvimento de Sistemas pelo SENAI, o que me proporcionou uma base sólida de conhecimentos. Atualmente, estou aprofundando minha experiência em front-end, com foco em soluções inovadoras e impactantes utilizando tecnologias fullstack JS.
           </p>
         </div>
         <div className={styles.boxImg}>
