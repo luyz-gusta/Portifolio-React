@@ -245,6 +245,7 @@ footer {
 
 @media (max-width: 768px) {
     .secContact {
+        height: max-content !important;
         padding: 30px 30px;
     }
 
