@@ -8,7 +8,7 @@ import mailLight from '../../../assets/icons/mailLight.svg'
 import phoneDark from '../../../assets/icons/phoneDark.svg'
 import phoneLight from '../../../assets/icons/phoneLight.svg'
 import locationDark from '../../../assets/icons/locationDark.svg'
-import locationLight from '../../../assets/icons/mailLight.svg'
+import locationLight from '../../../assets/icons/locationLight.svg'
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Contact() {
